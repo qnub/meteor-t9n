@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Almost i18n, with standard translations for basic meteor packages.",
-  version: "0.0.1",
+  version: "0.0.2",
   name: "qnub:t9n",
   git: "https://github.com/qnub/meteor-t9n.git",
 });

@@ -22,7 +22,7 @@ To add translation:
 
 ### Get a translation in Javascript:
 
-`t9n(code)`
+`t9n(<code>)`
 
 Examples:
 
@@ -37,13 +37,13 @@ If a translation is not found the key is displayed. To spot not translated keys 
 
 If you use `get` you can also print the prefix and postfix if you set the second parameter to `true` (it defaults to `false`).
 
-`t9n(code, true);`
+`t9n(<code>, true);`
 
 ### Get a localized text with parameters
 
 Optionally named parameters can be used, naming them allows for repetition.
 
-`t9n(code, true, args);`
+`t9n(<code>, <mark_missinf_flag>, args);`
 
 Example:
 
@@ -70,6 +70,17 @@ Example:
 
   You must specify the second argument for prefix/postfix too, I am sorry.
 
+### Force language
+
+You can get translated text for any existed translation by seting 4th argument to laguage code:
+
+`t9n(<code>, <true>, <args>, lang);`
+
+Example:
+
+    t9n('Site_description', false, {}, 'ru');
+
+Will output translation string for 'Site_description' in `ru` language.
 
 ### Define translations
 
